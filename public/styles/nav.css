@@ -1,0 +1,15 @@
+nav {
+    height: 120px;
+    width: 100%;
+    background-color: #4056A1;
+    color: #ffffff;
+    font-family: 'Bungee', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 1.5em;
+    box-sizing: border-box;
+    position: fixed;
+  
+  
+    }
