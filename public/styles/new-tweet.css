@@ -1,0 +1,13 @@
+.text-area-container textarea{
+width: 100%;
+background-color: transparent;
+border-top: 0;
+border-left: 0;
+border-right: 0;
+border-bottom: 5px solid black;
+}
+
+.tweet-button-container{
+ display: flex;
+ justify-content: space-between;
+}
