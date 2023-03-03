@@ -133,3 +133,59 @@ footer{
   word-break: break-all;
 }
 
+/* Display settings for minimum 768 and maximum 1023 px  */
+@media (min-width:768px) and (max-width:1023px){
+  /* head and messages shown in a row */
+  #size-desktop {
+    display: flex;
+    flex-direction: row;
+  }  
+  /* nav background color changes and img is removed */
+  nav {
+    background-color: #4056A1;
+    background-image: none;
+  }
+
+  /* #head is placed in header and changes are made so that it can be shown on right side of tweets */
+  #head {
+    width: 50%;
+    height: 50%;
+    padding:20px;
+    margin:60px;
+    margin-top: 100px;   
+  }  
+}
+
+/* Display settings for minimum 1024 px and above */
+@media only screen and (min-width:1024px){
+  #size-desktop {
+    display: flex;
+    flex-direction: row;
+  }  
+
+  nav {
+    background-color: #4056A1;
+  height: 120px;
+  width:100%;
+  padding-right:1.5em;
+  padding-left:1.5em;
+  padding-top: 1.5em;
+    background-image: none;
+  }
+
+  #head {
+    width: 50%;
+    height: 50%;
+    padding:20px;
+    margin:60px;
+    margin-top: 100px;
+   
+  }
+/* All settings remain the same as 768 px to 1023 px just one change i.e. in posted tweet handle on right side of header in posted tweet disapears */
+  .mrIsaac {
+    display: none;
+  }
+}
+
+
+
