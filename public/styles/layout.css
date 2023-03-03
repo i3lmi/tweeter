@@ -3,7 +3,8 @@
  * https://css-tricks.com/international-box-sizing-awareness-day/
  * Do not modify these two selectors, please
  */
-html {
+/* for main html border box style of box sizing is used */
+ html {
   box-sizing: border-box;
 }
 *, *:before, *:after {
@@ -15,20 +16,10 @@ html {
  */
 
 body {
+  font-family: Source Sans Pro;
   color: #545149;
   background-color: #f4f1ec;
   font-size: 24px;
-  font-family: 'Bungee', cursive;
-  font-family: 'Source Sans Pro', sans-serif;
+  padding-top: 120px;
 }
 
-/*
- * Additional CSS can be defined below or in other CSS files, as per instructions.
- */
-
- main.container {
-  width: 90%;
-  margin: 0 auto;
-  /* background-color: #a5c7da60; */
-  color: #0085cc;
- }

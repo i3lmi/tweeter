@@ -1,80 +1,135 @@
-    .text-area-container textarea{
-    width: 100%;
-    background-color: transparent;
-    border-top: 0;
-    border-left: 0;
-    border-right: 0;
-    border-bottom: 5px solid black;
-    }
-    
-    .tweet-button-container{
-     display: flex;
-     justify-content: space-between;
-    }
+/* class is used to formate the user input and error display area */
+.container{
   
-    article.tweet {
-      border: 2px solid black;
-      padding: 1em;
-      margin: 1em 0;
-    }
-    
+  width: 90%;
+  margin: 2em;
+}
 
-    article.tweet:hover {
-      box-shadow: 5px 5px black;
-    }
-    article.tweet header, article.tweet footer {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
+/* class is used to show submit button and counter in row with space between */
+.submit-button{
+  display:flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 91%;
+ }
+
+/* this id is used to make changes in the textarea */
+#tweet-text{
+  outline: none;
+  border: none;
+  width: 91%;
+  border-bottom: 3px black solid;
+  padding: 0.25em;
+  background-color: #f4f1ec;
+  font: italic bold; 
+}
+
+/* changes made in article tag to meet the display requirementsf for outer structure of posted tweet */
+article {
+  display: flex;
+  flex-direction: column;
+  margin: 2em;
+  padding: 1em;
+  border: 3px solid black;
+  width: 82%;    
+}
+
+/* shows table shadow when cursor hovers over posted tweet */
+article:hover {
+  box-shadow: 5px 7px #b0a9b8;  
+}
+
+/* how header is displayed inside tweetbox */
+.tweetHead {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.icon {   
+  margin-right: 10px;  
+}
+
+/* avatar and name are displayed in row */
+.namePic {
+  display: flex;
+  flex-direction: row;  
+}
+
+/* font settings for name */
+.name {
+  font-family: Source Sans Pro;
+  font-size: 20px;
+}
+
+/* font settings for handle on right side of tweet table in header */
+.mrIsaac {
+  color: #b0a9b8;
+  font-size: 20px;
+}
+
+
+/* Footer settings in article */
+footer{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border-top: 3px black solid;
+  font-size: 15px;
+  padding-top: 0.25em ;
+  align-items: center;
+}
+
+/* color set for 3 icons showed in footer right side */
+.rightFoot{
+  color: #4056A1;
+}
+
+/* on hover color change for 3 icons placed in rigth side of footer */
+.rightFoot i:hover {
+  color: goldenrod;
+}
+
+#error-message {
+   justify-self: center;
+   display: inline-block;
+   width:70%;
+   border: 3px solid red;
+   align-items: center;
+   color: red;
+   margin-bottom: 3em;
+   margin-top: 1em;
+   padding: 20px;    
+   font-family: Helvetica,Arial,sans-serif;
+}
+
+#error-message1 {
   
-    article.tweet footer div i:hover{
-      color: green;
-  
-    }
-  
-    article.tweet footer {
-      padding-top: 0.2em;
-      border-top: 2px solid black;
-    }
+  justify-self: center;
+  display: inline-block;
+  width:70%;
+  border: 3px solid red;
+  align-items: center;
+  color: red;
+  margin-bottom: 3em;
+  margin-top: 1em;
+  padding: 20px;  
+  font-family: Helvetica,Arial,sans-serif;
+}
 
-    .tweets-container .profile {
-    display: flex;
-    justify-content: space-between;
-    align-items: center; 
-    }
+/* dispplay settings for Tweet button */
+.btn {
+  font-family: Bungee;
+  font-size: 17px;
+  background-color: #4056A1;
+  color: white;
+}
 
-    .tweets-container .picture-name {
-    display: flex;
-    align-items: center;
-    } 
+.tweetBody{
+  overflow: hidden;
+  text-overflow: ellipsis;
+  word-break: break-all;
+}
 
-    .tweets-container .picture-name .name {
-    padding-left: .5em;
-      }
-      
-    .tweets-container .picture-name .picture {
-    width: 2em;
-      } 
-
-      .tweet {
-        display: flex;
-        flex-direction: column;
-        border: solid #545149;
-        margin: 1em;
-        padding: .3em;
-        /* background-color: white; */
-        box-shadow: none;
-        animation: outOfHover 0.2s ease;
-      }
-      
-      .tweet:hover {
-        box-shadow: 5px 5px rgb(201, 202, 226, 1);
-        animation: intoHover 0.2s ease;
-      } 
-
-      .tweets-container .tweeter-handle {
-        font-weight: bold;
-        color: #c9cae2;
-        padding-right: 1em;
-      } 

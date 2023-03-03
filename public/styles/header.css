@@ -1,23 +1,18 @@
-/* body header {
-    height: 700px;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: #0085cc;
-    background-image: url("https://www.transparenttextures.com/patterns/45-degree-fabric-light.png");
-    font-weight: bold;
-    text-align: center;
-  }
-    
-      
-       */
+/* settings for header */
+#head {
+  height : 400px;
+  background-color: #eb9c34;
+  background-image: url("https://www.transparenttextures.com/patterns/notebook-dark.png");  
+}
 
-.profile-image {
- position: relative;
- top: 120px; 
- width: 90%;
- /* margin-top: 300px; */
-  margin: auto;
+/* settings for pic showed in header */
+.pic {
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* font size for name placed below picture */
+.main-name {
+  font-size: 30px;
 }
