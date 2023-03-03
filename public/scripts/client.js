@@ -4,7 +4,6 @@
  * Reminder: Use (and do all your DOM work in) jQuery's document ready function
  */
 $(document).ready(()=>{
-  console.log("my name is")
     function  createTweetElement(tweetData) {
         // const $tweet = $(`<article class="tweet">Hello world</article>`);
         const $tweet = $(`
