@@ -1,191 +1,49 @@
-/* class is used to formate the user input and error display area */
-.container{
-  
-  width: 90%;
-  margin: 2em;
+new-tweet {
+  margin:auto;
+  margin-top: 35px;
+  width: 70%;
+  background-color: #eee;
 }
 
-/* class is used to show submit button and counter in row with space between */
-.submit-button{
-  display:flex;
-  flex-direction: row;
-  justify-content: space-between;
-  width: 91%;
- }
-
-/* this id is used to make changes in the textarea */
-#tweet-text{
-  outline: none;
-  border: none;
-  width: 91%;
-  border-bottom: 3px black solid;
-  padding: 0.25em;
-  background-color: #f4f1ec;
-  font: italic bold; 
-}
-
-/* changes made in article tag to meet the display requirementsf for outer structure of posted tweet */
-article {
-  display: flex;
-  flex-direction: column;
-  margin: 2em;
-  padding: 1em;
-  border: 3px solid black;
-  width: 82%;    
-}
-
-/* shows table shadow when cursor hovers over posted tweet */
-article:hover {
-  box-shadow: 5px 7px #b0a9b8;  
-}
-
-/* how header is displayed inside tweetbox */
-.tweetHead {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 15px;
-}
-
-.icon {   
-  margin-right: 10px;  
-}
-
-/* avatar and name are displayed in row */
-.namePic {
-  display: flex;
-  flex-direction: row;  
-}
-
-/* font settings for name */
-.name {
-  font-family: Source Sans Pro;
-  font-size: 20px;
-}
-
-/* font settings for handle on right side of tweet table in header */
-.mrIsaac {
-  color: #b0a9b8;
-  font-size: 20px;
-}
-
-
-/* Footer settings in article */
-footer{
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  border-top: 3px black solid;
-  font-size: 15px;
-  padding-top: 0.25em ;
-  align-items: center;
-}
-
-/* color set for 3 icons showed in footer right side */
-.rightFoot{
-  color: #4056A1;
-}
-
-/* on hover color change for 3 icons placed in rigth side of footer */
-.rightFoot i:hover {
-  color: goldenrod;
-}
-
-#error-message {
-   justify-self: center;
-   display: inline-block;
-   width:70%;
-   border: 3px solid red;
-   align-items: center;
-   color: red;
-   margin-bottom: 3em;
-   margin-top: 1em;
-   padding: 20px;    
-   font-family: Helvetica,Arial,sans-serif;
-}
-
-#error-message1 {
-  
-  justify-self: center;
-  display: inline-block;
-  width:70%;
-  border: 3px solid red;
-  align-items: center;
-  color: red;
-  margin-bottom: 3em;
-  margin-top: 1em;
-  padding: 20px;  
-  font-family: Helvetica,Arial,sans-serif;
-}
-
-/* dispplay settings for Tweet button */
-.btn {
+.new-tweet button {
+  color: #ffffff;
+  background-color: #4056a1;
   font-family: Bungee;
-  font-size: 17px;
-  background-color: #4056A1;
-  color: white;
+  text-align: center;
+  float: left;
+  margin-left: 1em;
 }
 
-.tweetBody{
-  overflow: hidden;
-  text-overflow: ellipsis;
-  word-break: break-all;
+.new-tweet h3 {
+  text-align: left;
+  margin-left: 1em;
 }
 
-/* Display settings for minimum 768 and maximum 1023 px  */
-@media (min-width:768px) and (max-width:1023px){
-  /* head and messages shown in a row */
-  #size-desktop {
-    display: flex;
-    flex-direction: row;
-  }  
-  /* nav background color changes and img is removed */
-  nav {
-    background-color: #4056A1;
-    background-image: none;
-  }
-
-  /* #head is placed in header and changes are made so that it can be shown on right side of tweets */
-  #head {
-    width: 50%;
-    height: 50%;
-    padding:20px;
-    margin:60px;
-    margin-top: 100px;   
-  }  
+.new-tweet h6 {
+  float: left;
 }
 
-/* Display settings for minimum 1024 px and above */
-@media only screen and (min-width:1024px){
-  #size-desktop {
-    display: flex;
-    flex-direction: row;
-  }  
-
-  nav {
-    background-color: #4056A1;
-  height: 120px;
-  width:100%;
-  padding-right:1.5em;
-  padding-left:1.5em;
-  padding-top: 1.5em;
-    background-image: none;
-  }
-
-  #head {
-    width: 50%;
-    height: 50%;
-    padding:20px;
-    margin:60px;
-    margin-top: 100px;
-   
-  }
-/* All settings remain the same as 768 px to 1023 px just one change i.e. in posted tweet handle on right side of header in posted tweet disapears */
-  .mrIsaac {
-    display: none;
-  }
+.textArea {
+  width: 95%;
+  border: none;
+  background: none;
+  margin-left: 1em;
+  margin-right: 1em;
+  margin-bottom: 1em;
+  margin-top: 2em;
+  border-bottom: 4px solid;
+  font-weight: bold;
 }
 
+.counter {
+  float: right;
+  font-weight: bold;
+  margin-right: 1.8em;
+}
 
-
+.error-message {
+  padding-top: 1em;
+  padding-left: 1em;
+  font: lighter;
+  color: red;
+}

@@ -3,9 +3,9 @@
  * https://css-tricks.com/international-box-sizing-awareness-day/
  * Do not modify these two selectors, please
  */
-/* for main html border box style of box sizing is used */
- html {
+html {
   box-sizing: border-box;
+
 }
 *, *:before, *:after {
   box-sizing: inherit;
@@ -16,10 +16,47 @@
  */
 
 body {
-  font-family: Source Sans Pro;
+  display: flex;
+  flex-direction: column;
   color: #545149;
   background-color: #f4f1ec;
   font-size: 24px;
-  padding-top: 120px;
+  font-family: 'Source Sans Pro', sans-serif;
 }
+
+/*
+ * Additional CSS can be defined below or in other CSS files, as per instructions
+ */
+
+ main {
+  width:90%;
+  margin:auto;
+  
+ }
+
+ @media only screen and (min-width : 1024px){
+
+  body {
+    flex-direction: row;
+  }
+
+  header {
+    display:flex;
+    align-items: center;
+    margin-left: 5em;
+    margin-right: 5em;
+    margin-top: 6em; 
+    padding-left: 3em;
+    padding-right: 3em;
+  }
+
+  main {
+    margin : 5em;
+  }
+ }
+   
+ 
+
+
+
 

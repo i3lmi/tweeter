@@ -1,35 +1,20 @@
-/* Navigation settings */
 nav {
-  display: flex;
-  justify-content: space-between;
-  font-family: Bungee;
-  color: #FFFFFF;
-  background-color: #eb9c34;
-  background-image: url("https://www.transparenttextures.com/patterns/notebook-dark.png");
-  font-size: 24px;
-  padding: 1.5em;  
   position: fixed;
-  top: 0;
-  width: 100%;
-  z-index: 1;  
-}
+  color:#FFFFFF;
+  background-color:#4056A1;
+  height: 120px;
+  width:100%;
+  padding-right:1.5em;
+  padding-left:1.5em;
+  padding-top: 1.5em;
+  }
 
-/* font settings for right side items of nav */
-.nav-right {  
-  font-family: Source Sans Pro;
-  font-size: 20px;
-} 
+ 
+ span {
+    font-family: Bungee;
+    text-align: center;
+  }
 
-/* display settings for arrow */
-#arrow{
-  display:flex;
-  justify-content: center;
-  padding-top: 0.25em;
-  color: red;  
-}
-
-/* arrow has an id which brings us back to top of the body so color of <a> tag is changed */
-#arrow a {
-  color: red;
-}
-
+ .arrow {
+    color:red;
+  }

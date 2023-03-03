@@ -1,18 +1,10 @@
-/* settings for header */
-#head {
-  height : 400px;
-  background-color: #eb9c34;
-  background-image: url("https://www.transparenttextures.com/patterns/notebook-dark.png");  
-}
-
-/* settings for pic showed in header */
-.pic {
-  display:flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-/* font size for name placed below picture */
-.main-name {
-  font-size: 30px;
+header {
+display : flex;  
+height : 500px;
+background-color: #eb9c34;
+/* background-image: url("https://www.transparenttextures.com/patterns/black-felt.png"); */
+padding-top: 3.0em;
+align-items: center;
+justify-content: center;
+flex-direction: column;
 }

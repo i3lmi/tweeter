@@ -1,0 +1,53 @@
+
+
+#tweets-container {  
+  margin-top: 4em;
+  margin-bottom: 2em;
+  margin-left: 1em;
+  margin-right:1em;
+  width: 95%;
+}
+
+.tweet {
+  border:2px solid black;
+  margin: 1em 0;
+  padding: 1em;
+}
+
+.tweet:hover{
+  box-shadow: 2px 2px 2px black;
+}
+
+.tweet-header,.tweet-header-name, .tweet-footer {
+  display:flex;
+  justify-content: space-between; 
+  align-items: center; 
+}
+
+
+.tweet-header-username {
+  font-style: normal;
+}
+
+.tweet-header-handle {
+  font-size: 0.8cm;
+  color: lightgray;
+  font : bold;
+}  
+
+.tweet-main {
+  width : 95%;
+  border-bottom: 2px solid black;
+  padding: 1em 0;
+  word-wrap: break-word;
+}
+
+.tweet-footer-icons {
+  color: lightskyblue;
+}
+
+.tweet-footer-icons i:hover{
+  color :gold;
+  text-shadow: 2px 2px 2px black;
+}
+
