@@ -1,4 +1,4 @@
-body header {
+/* body header {
     height: 700px;
     width: 100%;
     display: flex;
@@ -12,4 +12,12 @@ body header {
   }
     
       
-      
+       */
+
+.profile-image {
+ position: relative;
+ top: 120px; 
+ width: 90%;
+ /* margin-top: 300px; */
+  margin: auto;
+}

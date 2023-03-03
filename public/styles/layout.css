@@ -29,6 +29,6 @@ body {
  main.container {
   width: 90%;
   margin: 0 auto;
-  background-color: #a5c7da60;
+  /* background-color: #a5c7da60; */
   color: #0085cc;
  }
